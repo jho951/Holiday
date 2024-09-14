@@ -50,6 +50,7 @@ function flipImage() {
   const play = document.getElementById("btn-container");
   const postcardElement = document.getElementById("postcard");
   const nameElement = document.querySelector(".p-name");
+  const clickElement = document.querySelector(".next");
 
   // 초기에는 아이콘 없음
   if (isFlippedBefore === 0) {
@@ -89,6 +90,7 @@ function flipImage() {
     audio.play();
     iconElement.classList.remove("fa-play");
     iconElement.classList.add("fa-pause");
+    clickElement.style.display = "none";
   }
 
   setTimeout(() => {

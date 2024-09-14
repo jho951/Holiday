@@ -144,15 +144,7 @@ button {
 .next {
     position: absolute;
     right: 10%;
-    top: 90%;
+    top: 80%;
     font-size: 30px;
     color: #ffffff;
-    animation: blink-animation 2s steps(2, start) infinite;
-}
-
-/* 깜빡임 애니메이션 정의 */
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
 }
