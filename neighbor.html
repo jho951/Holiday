@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정민 이사의 추석 모바일 카드</title>
+    
+    <!-- 폰트 및 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- 스크립트 -->
+    <script src="./util/flip.js" defer></script>
+    <script src="./util/index.js" defer></script>
+    <script src="./util/music.js" defer></script>
+</head>
+
+<body>
+    <main id="postcard" class="rotate-0" onclick="flipImage()">
+        <!-- 음악 버튼 -->
+        <section id="btn-container">
+            <button class="btn-bgm" onclick="controlBgm(event)">
+                <i class="fa-sharp fa-solid fa-play icon"></i>
+            </button>
+            <audio id="audio-bgm" autoplay loop>
+                <source src="./audio/music.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <!-- 카드 앞면 -->
+        <section class="card-container front">
+            <img class="photo" src="./images/photo.jpeg" alt="front-card"/>
+        </section>
+
+        <!-- 카드 뒷면 -->
+        <section class="card-container back">
+            <img class="photo" src="./images/postcard.jpeg" alt="back-card"/>
+            <article id="msg-container">
+                <p class="p-message"></p>
+                <p class="p-name hidden">- 이정민 드림 -</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
