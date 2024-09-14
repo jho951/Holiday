@@ -1,8 +1,8 @@
 /* 반응형 디자인 - 모바일 (최대 480px) */
 @media screen and (max-width: 480px) {
     #postcard {
-        width: 350px;
-        height: 350px;
+        width: 330px;
+        height: 330px;
     }
 
     .p-message {
