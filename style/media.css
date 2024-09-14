@@ -11,6 +11,9 @@
     .icon{
         font-size: 15px;
     }
+    p{
+        padding-left: 15px;
+    }
 }
 
 
@@ -26,6 +29,9 @@
     }
     .icon{
         font-size: 18px;
+    }
+        p{
+        padding-left: 17px;
     }
 }
 

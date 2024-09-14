@@ -74,7 +74,6 @@ function flipImage() {
     play.style.transform = "rotate(180deg)";
     iconElement.style.opacity = "0";
     setTimeout(() => {
-      iconElement.style.color = "black";
       iconElement.style.opacity = "1";
     }, 300);
   }

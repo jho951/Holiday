@@ -83,8 +83,9 @@ p {
     color: #ffffff;
     text-align: center;
     word-wrap: break-word;
-    line-height: 2;
+    line-height: 1.7;
     white-space: pre-line;
+    padding-left: 20px;
 }
 
 .p-message {
@@ -101,6 +102,8 @@ p {
     font-size: 25px;
 
 }
+
+
 .right{
     justify-content: right;
     right: 10%;
