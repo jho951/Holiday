@@ -6,8 +6,13 @@ function flipImage() {
   const play = document.getElementById("btn-container");
   const postcardElement = document.getElementById("postcard");
 
-  // 회전 상태에 따라 클래스 추가/제거
+  // 초기에는 아이콘 없음
+  if (isFlipped.num !== 0) {
+    iconElement.style.opacity = "1";
+  }
+
   if (isFlipped.status) {
+    // 회전 상태에 따라 클래스 추가/제거
     postcardElement.classList.remove("rotate-180");
     postcardElement.classList.add("rotate-0");
     play.style.right = "10%";

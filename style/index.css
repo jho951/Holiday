@@ -134,6 +134,7 @@ button {
 .icon{
     color:#ffffff;
     font-size: 20px;
+    opacity: 0;
 }
 .behind{
     color:#0f0e0e;
