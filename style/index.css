@@ -4,7 +4,6 @@
   
 /* 전체 배경과 텍스트 스타일 지정 */
 body {
-    width: 100vw;
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -13,6 +12,8 @@ body {
     background-image: url('../images/background.jpg');
     background-size: cover; 
     background-position: center; 
+    margin:0;
+    padding: 0;
 }
 
 /* 카드 스타일 */
