@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>추석 모바일 카드</title>
     <meta property="og:title" content="">
     <meta property="og:description" content="">
@@ -17,12 +17,22 @@
     
     <!-- 스크립트 -->
     <script src="./util/flip.js" defer></script>
-    <script src="./util/index.js" defer></script>
+    <script src="./util/music.js" defer></script>
 </head>
 
 <body>
     <main id="postcard" class="rotate-0" onclick="flipImage()">
-       <!-- 카드 앞면 -->
+        <!-- 음악 버튼 -->
+        <section id="btn-container">
+            <button class="btn-bgm" onclick="controlBgm(event)">
+                <i class="fa-sharp fa-solid fa-play icon"></i>
+            </button>
+            <audio id="audio-bgm" loop>
+                <source src="./audio/music.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <!-- 카드 앞면 -->
         <section class="card-container front">
             <img class="photo" src="./images/photo.jpeg" alt="front-card"/>
             <p class="next">click</p>
