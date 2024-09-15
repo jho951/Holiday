@@ -16,20 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <!-- 스크립트 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        // 현재 URL의 마지막 부분을 가져옵니다.
-        const urlPath = window.location.pathname;
-        const lastSegment = urlPath.substring(urlPath.lastIndexOf('/') + 2);
-            console.log(urlPath)
-        // URL의 마지막 부분이 있을 경우 Open Graph 태그 수정
-        if (lastSegment) {
-        const decodedName = decodeURIComponent(lastSegment); // 한글이 있을 경우 디코딩
-        document.querySelector('meta[property="og:title"]').setAttribute("content", `${decodedName}에게 보내는 모바일 카드`);
-        document.querySelector('meta[property="og:description"]').setAttribute("content", `${decodedName}님을 위한 특별한 추석 모바일 카드입니다.`);
-        }
-    });
-</script>
     <script src="./util/index.js" defer></script>
     <script src="./util/music.js" defer></script>
 </head>
