@@ -137,8 +137,12 @@ button {
     font-size: 20px;
     opacity: 0;
 }
+.blacks{
+    color:#030303;
+    opacity: 1;
+}
 .behind{
-    color:#0f0e0e;
+    color:#030303;
 }
 
 .next {

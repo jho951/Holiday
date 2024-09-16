@@ -1,5 +1,3 @@
-// 웹 페이지를 공유하는 함수예요.
-// 이 함수는 Web Share API를 사용하고 있는데, 만약 사용자의 브라우저가 Web Share API를 지원하지 않는 경우, 경고 창을 통해 사용자에게 알립니다.
 function shareMessage() {
   if (navigator.share) {
     try {

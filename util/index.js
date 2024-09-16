@@ -84,7 +84,6 @@ function flipImage() {
   // 상태 반전
   isFlipped = !isFlipped;
   isFlippedBefore++;
-  console.log(isFlippedBefore);
 
   if (isFlippedBefore === 1) {
     audio.play();
