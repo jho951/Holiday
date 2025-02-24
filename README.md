@@ -1,2 +1,3 @@
-# -holidayletter
-Using this during holiday
+## Project : Holiday
+#Skill : JS
+#Purpose : Using this during holiday
